@@ -1,0 +1,24 @@
+.category-tile{display:block}
+.category-tile:focus-visible,.button:focus-visible,.icon-button:focus-visible,.filter:focus-visible{outline:2px solid var(--red);outline-offset:3px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:10px}
+.button-outline-light{border-color:#ffffff9c;background:#ffffff0a;color:white}
+.button-outline-light:hover{background:#ffffff1c}
+.newsletter-section{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:10%;padding:76px max(7.2%,calc((100% - 1180px)/2));background:#e9e9dd}
+.newsletter-section h2{font-size:clamp(36px,4vw,50px)}
+.newsletter-section>div>p:last-child{max-width:350px;color:var(--muted);font-size:11px;line-height:1.8}
+.newsletter-form label{display:block;margin-bottom:11px;font-size:10px;font-weight:600}
+.newsletter-form>div{display:flex;border-bottom:1px solid var(--ink)}
+.newsletter-form input{flex:1;min-width:0;height:46px;border:0;outline:0;background:transparent;font-size:12px}
+.newsletter-form button{display:flex;align-items:center;gap:15px;padding:0 3px 0 12px;border:0;background:none;font-size:10px;font-weight:700;cursor:pointer}
+.newsletter-form button span{font-size:14px}
+.newsletter-form small{display:block;margin-top:10px;color:var(--muted);font-size:8px;line-height:1.6}
+.collection-hero{min-height:470px;display:grid;grid-template-columns:1fr 1fr;overflow:hidden;background:var(--green);color:#fff}
+.collection-copy{align-self:center;padding:65px max(9%,calc((100vw - 1180px)/2)) 65px max(9%,calc((100vw - 1180px)/2))}
+.collection-copy h1{margin:0;font-size:clamp(55px,6vw,82px);line-height:1.02}
+.collection-copy h1 em{color:var(--lime);font-weight:500}
+.collection-copy>p:not(.eyebrow){max-width:390px;margin:20px 0 28px;color:#ffffffc4;font-size:12px;line-height:1.8}
+.collection-hero>img{width:100%;height:100%;min-height:470px;object-fit:cover}
+.collection-products{padding-top:75px}
+.collection-products .section-heading{align-items:end}
+@media(max-width:900px){.newsletter-section{padding-inline:6%;gap:6%}.collection-hero{min-height:400px}.collection-copy{padding:50px 9%}.collection-hero>img{min-height:400px}}
+@media(max-width:600px){.newsletter-section{grid-template-columns:1fr;gap:20px;padding:56px 7%}.newsletter-section h2{font-size:39px}.collection-hero{grid-template-columns:1fr}.collection-copy{padding:54px 8% 42px}.collection-copy h1{font-size:58px}.collection-hero>img{min-height:0;aspect-ratio:4/3;max-height:380px}.collection-products{padding-top:58px}.collection-products .section-heading{align-items:start}}
